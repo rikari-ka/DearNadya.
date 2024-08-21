@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #E6EAF0; /* Latar belakang abu-abu pucat */
+    color: #4A4A6A; /* Teks dengan warna ungu tua */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6A6F92; /* Ungu lembut untuk header */
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+nav {
+    background-color: #50546D; /* Warna ungu yang lebih tua untuk navigasi */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EDEDF2; /* Warna lembut untuk tautan */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #D8D8E5; /* Warna lebih terang saat di-hover */
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: #6A6F92; /* Warna yang sama dengan header untuk konsistensi */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #E6EAF0; /* Teks dengan warna abu-abu pucat */
+}
+
+footer {
+    background-color: #50546D; /* Warna ungu tua untuk footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #EDEDF2;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    article {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    article {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
+
+.maple-title {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+    color: #C0C3D2; /* Warna yang lebih lembut untuk judul */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    background: linear-gradient(to right, #6A6F92, #858A9E); /* Gradasi warna lembut */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.maple-title::before {
+    content: '🍁';
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.maple-title::after {
+    content: '🍁';
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
